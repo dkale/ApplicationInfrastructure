@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationInfrastructure", "ApplicationInfrastructure\ApplicationInfrastructure.csproj", "{27A15FB7-F1D5-4F8B-AB5F-7B1B36BDBAAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetStandard.Infrastructure", "DotNetStandard.Infrastructure\DotNetStandard.Infrastructure.csproj", "{27A15FB7-F1D5-4F8B-AB5F-7B1B36BDBAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFramework.Infrastructure", "DotNetFramework.Infrastructure\DotNetFramework.Infrastructure.csproj", "{D4B5F103-0184-44E5-B869-B44F2E147C77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{27A15FB7-F1D5-4F8B-AB5F-7B1B36BDBAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27A15FB7-F1D5-4F8B-AB5F-7B1B36BDBAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27A15FB7-F1D5-4F8B-AB5F-7B1B36BDBAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B5F103-0184-44E5-B869-B44F2E147C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B5F103-0184-44E5-B869-B44F2E147C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B5F103-0184-44E5-B869-B44F2E147C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B5F103-0184-44E5-B869-B44F2E147C77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -74,7 +74,7 @@ namespace DotNetFramework.Infrastructure.TestClasses
 
         public async Task SaveChangesAsync()
         {
-
+            await Task.CompletedTask;
         }
 
         public IQueryable<TEntity> FromQuery(string query)

@@ -7,14 +7,41 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="XsltTemplates\alert-loan-initiated-template.xslt" />
+    <None Remove="XsltTemplates\alert-maturing-loans-template.xslt" />
+    <None Remove="XsltTemplates\alert-proposed-loans-template.xslt" />
+    <None Remove="XsltTemplates\bank-email-template.xslt" />
+    <None Remove="XsltTemplates\close-loan-ticket-template.xslt" />
+    <None Remove="XsltTemplates\open-loan-ticket-template.xslt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="XsltTemplates\alert-loan-initiated-template.xslt" />
+    <Content Include="XsltTemplates\alert-maturing-loans-template.xslt" />
+    <Content Include="XsltTemplates\alert-proposed-loans-template.xslt" />
+    <Content Include="XsltTemplates\bank-email-template.xslt" />
+    <Content Include="XsltTemplates\close-loan-ticket-template.xslt" />
+    <Content Include="XsltTemplates\open-loan-ticket-template.xslt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="automapper.extensions.microsoft.dependencyinjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="7.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.0" />
+    <PackageReference Include="microsoft.extensions.configuration.json" Version="3.1.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.0" />
     <PackageReference Include="morelinq" Version="3.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Polly" Version="7.2.0" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
   </ItemGroup>
 
 </Project>

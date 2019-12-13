@@ -16,15 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="XsltTemplates\alert-loan-initiated-template.xslt" />
-    <Content Include="XsltTemplates\alert-maturing-loans-template.xslt" />
-    <Content Include="XsltTemplates\alert-proposed-loans-template.xslt" />
-    <Content Include="XsltTemplates\bank-email-template.xslt" />
-    <Content Include="XsltTemplates\close-loan-ticket-template.xslt" />
-    <Content Include="XsltTemplates\open-loan-ticket-template.xslt" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="automapper.extensions.microsoft.dependencyinjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />

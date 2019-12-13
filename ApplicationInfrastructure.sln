@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFramework.Infrastruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetStandard.ServiceLayer", "DotNetStandard.ServiceLayer\DotNetStandard.ServiceLayer.csproj", "{8738A2F2-B658-4995-83D1-A86C9125D7E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.UnitTest.Sample", "DotNetCore.UnitTest.Sample\DotNetCore.UnitTest.Sample.csproj", "{DD67C411-6D1B-40AE-87AF-77990C04A949}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample_Implementations", "Sample_Implementations", "{E0EBEB2C-EC67-4B79-A712-ACA4CDBDFB5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetStandard.DataAccess", "DotNetStandard.DataAccess\DotNetStandard.DataAccess.csproj", "{70E353D8-D5B7-443B-9487-3472119167B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +33,22 @@ Global
 		{8738A2F2-B658-4995-83D1-A86C9125D7E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8738A2F2-B658-4995-83D1-A86C9125D7E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8738A2F2-B658-4995-83D1-A86C9125D7E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD67C411-6D1B-40AE-87AF-77990C04A949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD67C411-6D1B-40AE-87AF-77990C04A949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD67C411-6D1B-40AE-87AF-77990C04A949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD67C411-6D1B-40AE-87AF-77990C04A949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E353D8-D5B7-443B-9487-3472119167B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E353D8-D5B7-443B-9487-3472119167B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E353D8-D5B7-443B-9487-3472119167B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E353D8-D5B7-443B-9487-3472119167B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8738A2F2-B658-4995-83D1-A86C9125D7E2} = {E0EBEB2C-EC67-4B79-A712-ACA4CDBDFB5B}
+		{DD67C411-6D1B-40AE-87AF-77990C04A949} = {E0EBEB2C-EC67-4B79-A712-ACA4CDBDFB5B}
+		{70E353D8-D5B7-443B-9487-3472119167B8} = {E0EBEB2C-EC67-4B79-A712-ACA4CDBDFB5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF0E813C-10E8-403E-A37D-4D21BC2131FC}

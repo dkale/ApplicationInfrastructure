@@ -14,14 +14,31 @@ using System.Collections.Generic;
 
 namespace DotNetStandard.Infrastructure.UnitTests
 {
-    public abstract class ServiceTestBase
+    /// <summary>
+    /// Foundation class for Test Classes to inherit from. 
+    /// You could have another base class (ServiceTestBase.cs) ineheriting from this class.
+    /// The ServiceTestBase.cs class shall serve as the base class for further service specific test classes.
+    /// The ServiceTestBase.cs class will further register dependencies by either calling 
+    /// other application specific service collections extensions (ex: .AddDataAccessModule(), .AddServiceModule())
+    /// which will in turn register application dependencies.
+    /// ServiceTestBase.cs will also register the DbContext with in-memory database (ex: serviceCollection.AddDbContext<EmployeeDbContext>(options => options.UseInMemoryDatabase("Employees_Db"))).
+    /// 
+    /// </summary>
+    public abstract class AbstractTestBase
     {
-        public IServiceCollection ServiceCollection { get; set; }
+        /// <summary>
+        /// Exposes the IServiceCollection instance for derived classes to register their dependencies.
+        /// </summary>
+        public IServiceCollection ServiceCollection { get; private set; }
+
+        /// <summary>
+        /// ServiceProvider instance after the ServiceCollection is built.
+        /// </summary>
         protected ServiceProvider ServiceProvider;
         protected IConfiguration Configuration;
         private ConfigurationBuilder _configurationBuilder;
 
-        public ServiceTestBase()
+        public AbstractTestBase()
         {
             Initialize();
         }

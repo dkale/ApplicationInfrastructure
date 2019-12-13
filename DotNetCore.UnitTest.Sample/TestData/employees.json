@@ -1,0 +1,14 @@
+{
+  "employees": [
+    {
+      "id": 101,
+      "firstName": "Donald",
+      "lastName":  "Trump"
+    },
+    {
+      "id": 102,
+      "firstName": "Barack",
+      "lastName": "Obama"
+    }
+  ]
+}
